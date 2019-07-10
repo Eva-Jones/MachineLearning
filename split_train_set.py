@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-def split_train_test(data, cost_validation_percentage, test_percentage, id_column, hash = hashlib.md5):
+def split_train_set(data, cost_validation_percentage, test_percentage, id_column, hash = hashlib.md5):
     ids = data[id_column]
     shuffled_set = np.random.permutation(len(data))
 
